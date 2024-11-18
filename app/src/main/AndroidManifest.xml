@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
-    <!--网络权限-->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!--相机权限-->
-    <uses-permission android:name="android.permission.CAMERA" />
-    <!-- 读写文件权限 -->
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 读写文件权限 -->
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
@@ -15,8 +12,7 @@
         android:maxSdkVersion="32" />
     <uses-permission
         android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
-        tools:ignore="ScopedStorage" />
-    <!--安卓14 头像相册需要用到-->
+        tools:ignore="ScopedStorage" /> <!-- 安卓14 头像相册需要用到 -->
     <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
 
     <application
@@ -30,6 +26,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Demo"
         tools:targetApi="31">
+        <activity
+            android:name=".demo2.HomeActivity"
+            android:exported="false" />
         <activity
             android:name=".demo1.EditInfoActivity"
             android:exported="false" />
@@ -52,7 +51,6 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
-
     </application>
 
 </manifest>

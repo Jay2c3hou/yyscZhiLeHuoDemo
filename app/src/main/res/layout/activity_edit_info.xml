@@ -78,7 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_5sdp"
         android:layout_marginEnd="@dimen/_25sdp"
-        android:background="@drawable/shape_corner15"
+        android:background="@drawable/shape_corner30"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/tv_nickname"
         app:layout_constraintTop_toBottomOf="@+id/tv_nickname">
@@ -117,7 +117,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_5sdp"
         android:layout_marginEnd="@dimen/_25sdp"
-        android:background="@drawable/shape_corner15"
+        android:background="@drawable/shape_corner30"
         android:hint="@string/string_input_my_birthday"
         android:paddingHorizontal="@dimen/_8sdp"
         android:paddingVertical="@dimen/_8sdp"

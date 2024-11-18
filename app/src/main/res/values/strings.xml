@@ -14,4 +14,5 @@
     <string name="string_choose_photo">从相册中选择</string>
     <string name="string_take_photo">拍照</string>
     <string name="string_birthday">生日</string>
+    <string name="string_difficulty">难度值：</string>
 </resources>

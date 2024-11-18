@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_100sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:background="@drawable/shape_corner15">
+
+    <net.csdn.roundview.RoundImageView
+        android:id="@+id/iv_item_lesson"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rRadius="@dimen/_6sdp"
+        tools:src="@drawable/ic_avatar" />
+
+    <TextView
+        android:id="@+id/tv_item_lesson_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="2"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_item_lesson_difficulty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_item_lesson"
+        app:layout_constraintTop_toTopOf="@+id/iv_item_lesson"
+        tools:text="这是一个测试的标题,这是一个测试的标题这是一个测试的标题" />
+
+    <TextView
+        android:id="@+id/tv_item_lesson_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_27A1FE"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_item_lesson"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_lesson_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_lesson_title"
+        tools:text="难度：60" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_item_lesson_difficulty"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_lesson_difficulty"
+        app:layout_constraintTop_toTopOf="@+id/tv_item_lesson_difficulty"
+        tools:text="114词" />
+
+    <net.csdn.roundview.RoundTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/color_27A1FE"
+        android:paddingHorizontal="@dimen/_5sdp"
+        android:paddingVertical="@dimen/_3sdp"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rBottomRightRadius="@dimen/_15sdp"
+        app:rTopLeftRadius="@dimen/_15sdp"
+        tools:text="环境生态" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="@dimen/_80sdp"
     android:layout_height="@dimen/_30sdp"
-    android:background="@drawable/shape_corner15">
+    android:background="@drawable/shape_corner30">
 
     <ImageView
         android:id="@+id/ic_gender"

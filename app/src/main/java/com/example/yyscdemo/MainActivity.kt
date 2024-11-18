@@ -7,6 +7,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.yyscdemo.databinding.ActivityMainBinding
 import com.example.yyscdemo.demo1.EditInfoActivity
+import com.example.yyscdemo.demo2.HomeActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,8 +25,13 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        binding.button.setOnClickListener {
-            startActivity(EditInfoActivity.createIntent(this))
+        binding.apply {
+            button1.setOnClickListener {
+                startActivity(EditInfoActivity.createIntent(this@MainActivity))
+            }
+            button2.setOnClickListener {
+                startActivity(HomeActivity.createIntent(this@MainActivity))
+            }
         }
     }
 }
