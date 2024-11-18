@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">demo</string>
+    <string name="string_button_1">demo1</string>
+    <string name="string_button_2">demo2</string>
+    <string name="string_button_3">demo3</string>
+    <string name="string_finish">完成</string>
+    <string name="string_click_change_avatar">点击更换头像</string>
+    <string name="string_nickname">昵称</string>
+    <string name="string_hint_nickname">来填写你的昵称吧~</string>
+    <string name="string_your_birthday">你的生日</string>
+    <string name="string_input_my_birthday">输入我的生日</string>
+    <string name="string_cancel">取消</string>
+    <string name="string_sure">确认</string>
+    <string name="string_choose_photo">从相册中选择</string>
+    <string name="string_take_photo">拍照</string>
+    <string name="string_birthday">生日</string>
+</resources>
