@@ -73,4 +73,15 @@ dependencies {
 
     implementation("com.github.li-xiaojun:XPopup:2.10.0")
 
+    // Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+
+    // Gson Converter for Retrofit
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // OkHttp (Retrofit 的默认网络库)
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
+
+    // OkHttp Logging Interceptor (可选，便于调试网络请求)
+    implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
 }

@@ -32,9 +32,13 @@
         android:id="@+id/tl_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/white"
         android:padding="@dimen/_3sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vp_home" />
+        app:layout_constraintTop_toBottomOf="@+id/vp_home"
+        app:tabIndicatorHeight="0dp"
+        app:tabSelectedTextColor="#42A8FA"
+        app:tabTextColor="@color/black" />
 </androidx.constraintlayout.widget.ConstraintLayout>

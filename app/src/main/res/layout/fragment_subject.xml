@@ -21,5 +21,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="0.8"
-        app:layout_constraintStart_toEndOf="@+id/left_tab" />
+        app:layout_constraintStart_toEndOf="@+id/left_tab"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
