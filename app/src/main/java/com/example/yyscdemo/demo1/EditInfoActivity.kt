@@ -108,7 +108,6 @@ class EditInfoActivity : AppCompatActivity() {
             TAKE_PHOTO -> if (resultCode == RESULT_OK) {
                 //显示图片
                 outputImagePath.absolutePath.let {
-//                    Log.e("yyscpath", it)
                     displayImage(it)
                 }
             }
@@ -126,13 +125,6 @@ class EditInfoActivity : AppCompatActivity() {
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.btn)) { v, insets ->
-            val navigationBars = insets.getInsets(WindowInsetsCompat.Type.navigationBars())
-            v.setPadding(
-                navigationBars.left, navigationBars.top, navigationBars.right, navigationBars.bottom
-            )
             insets
         }
 
@@ -203,12 +195,20 @@ class EditInfoActivity : AppCompatActivity() {
         //拍照
         bottomViewBinding.apply {
             tvTakePhoto.click {
-                takePhoto()
+                val takePhotoIntent =
+                    CameraUtils.getTakePhotoIntent(this@EditInfoActivity, outputImagePath)
+                // 开启一个带有返回值的Activity，请求码为TAKE_PHOTO
+                startActivityForResult(takePhotoIntent, TAKE_PHOTO)
                 bottomSheetDialog.cancel()
             }
             //打开相册
             tvChoosePhoto.click {
-                openAlbum()
+                /**
+                 * 打开相册
+                 * 偷点懒直接写了这个 startActivityForResult
+                 * 其实不应该这样的,这个即将要被废弃,所以应该按官方那样,自己写个回调
+                 */
+                startActivityForResult(CameraUtils.getSelectPhotoIntent(), SELECT_PHOTO)
                 bottomSheetDialog.cancel()
             }
             //取消
@@ -217,25 +217,6 @@ class EditInfoActivity : AppCompatActivity() {
             }
         }
         bottomSheetDialog.show()
-    }
-
-    /**
-     * 打开相册
-     * 偷点懒直接写了这个 startActivityForResult
-     * 其实不应该这样的,这个即将要被废弃,所以应该按官方那样,自己写个回调
-     */
-    private fun openAlbum() {
-        startActivityForResult(CameraUtils.getSelectPhotoIntent(), SELECT_PHOTO)
-    }
-
-    /**
-     * 拍照
-     * 同上
-     */
-    private fun takePhoto() {
-        val takePhotoIntent = CameraUtils.getTakePhotoIntent(this, outputImagePath)
-        // 开启一个带有返回值的Activity，请求码为TAKE_PHOTO
-        startActivityForResult(takePhotoIntent, TAKE_PHOTO)
     }
 
     /**

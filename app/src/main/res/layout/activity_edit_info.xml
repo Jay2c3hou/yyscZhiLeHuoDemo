@@ -140,11 +140,12 @@
     <net.csdn.roundview.RoundButton
         android:id="@+id/btn"
         android:layout_width="0dp"
-        android:layout_height="@dimen/_30sdp"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_30sdp"
         android:layout_marginBottom="@dimen/_45sdp"
         android:background="@color/color_2971F8"
         android:gravity="center"
+        android:minHeight="@dimen/_30sdp"
         android:text="@string/string_finish"
         android:textColor="@color/white"
         android:textSize="@dimen/_12sdp"
