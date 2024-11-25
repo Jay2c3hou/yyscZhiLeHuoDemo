@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:letterSpacing="0.7"
+        android:textSize="@dimen/_17sdp"
+        tools:text="在很久很久以前的天空上，住着十个太阳兄弟。他们每天都很开心地轮流出来照耀大地，给大地带来温暖和光明。但是有一天，他们觉得一起出来玩会更有趣，于是十个太阳兄弟就一起升上了天空" />
+</FrameLayout>

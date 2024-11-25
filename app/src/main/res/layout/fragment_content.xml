@@ -4,25 +4,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!--    <ProgressBar-->
+    <!--        android:id="@+id/pb_content"-->
+    <!--        android:layout_width="@dimen/_40sdp"-->
+    <!--        android:layout_height="@dimen/_40sdp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
     <TextView
         android:id="@+id/tv_difficulty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_5sdp"
         android:layout_marginTop="@dimen/_5sdp"
-        android:text="@string/string_difficulty"
+        android:text="@string/string_difficulty_value"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout"
         android:layout_width="0dp"
-        android:layout_height="@dimen/_25sdp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_1sdp"
         app:layout_constraintBottom_toBottomOf="@id/tv_difficulty"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tv_difficulty"
         app:layout_constraintTop_toTopOf="@id/tv_difficulty"
+        app:tabIndicatorColor="@null"
+        app:tabRippleColor="@android:color/transparent"
         app:tabTextColor="#D2D2D8" />
 
     <androidx.viewpager2.widget.ViewPager2
@@ -33,6 +44,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

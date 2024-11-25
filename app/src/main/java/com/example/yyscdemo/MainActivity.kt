@@ -8,6 +8,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.yyscdemo.databinding.ActivityMainBinding
 import com.example.yyscdemo.demo1.EditInfoActivity
 import com.example.yyscdemo.demo2.HomeActivity
+import com.example.yyscdemo.demo3.ReadActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,6 +32,9 @@ class MainActivity : AppCompatActivity() {
             }
             button2.setOnClickListener {
                 startActivity(HomeActivity.createIntent(this@MainActivity))
+            }
+            button3.setOnClickListener {
+                startActivity(ReadActivity.createIntent(this@MainActivity))
             }
         }
     }

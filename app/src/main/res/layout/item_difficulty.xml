@@ -8,11 +8,11 @@
     android:background="@drawable/shape_corner30_white">
 
     <TextView
-        android:id="@+id/tv_gender"
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_difficulty"
+        android:layout_width="@dimen/_30sdp"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_6sdp"
-        android:layout_marginVertical="@dimen/_2sdp"
+        android:layout_marginVertical="@dimen/_1sdp"
+        android:gravity="center"
         android:textColor="@color/color_5E5E60"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

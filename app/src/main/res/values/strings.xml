@@ -14,7 +14,12 @@
     <string name="string_choose_photo">从相册中选择</string>
     <string name="string_take_photo">拍照</string>
     <string name="string_birthday">生日</string>
-    <string name="string_difficulty">难度值：</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="string_difficulty_value">难度值：</string>
+    <string name="string_difficulty">难度:%d</string>
+    <string name="string_lesson_index">%d / %d</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="string_no_data_tip">当前难度下没有该类文章,请选择其他难度值</string>
+    <string name="string_auto_page_turning">自动翻页</string>
+    <string name="string_enlarge_font">放大字体</string>
+    <string name="string_shrink_font">缩小字体</string>
 </resources>

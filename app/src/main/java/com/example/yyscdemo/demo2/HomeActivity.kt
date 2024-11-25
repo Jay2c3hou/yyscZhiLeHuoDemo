@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -15,7 +16,7 @@ import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
 class HomeActivity : AppCompatActivity() {
-
+    private val viewModel by viewModels<SubjectViewModel>()
     private val binding by lazy {
         ActivityHomeBinding.inflate(layoutInflater)
     }
@@ -42,10 +43,11 @@ class HomeActivity : AppCompatActivity() {
 
     private fun initUI() {
         binding.vpHome.adapter = MyPagerAdapter(this)
+        binding.vpHome.setUserInputEnabled(false)
         binding.tlHome.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab?) {
-                tab?.position?.let {
-                }
+//                tab?.position?.let {
+//                }
             }
 
             override fun onTabUnselected(tab: TabLayout.Tab?) {

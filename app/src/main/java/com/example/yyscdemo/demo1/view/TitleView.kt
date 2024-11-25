@@ -31,4 +31,5 @@ class TitleView @JvmOverloads constructor(
     }
 
     fun getLeftArrow() = icFinish
+    fun getTitle() = titleTextView
 }

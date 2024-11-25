@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-parcelize")
 }
 
 android {
@@ -84,4 +85,12 @@ dependencies {
 
     // OkHttp Logging Interceptor (可选，便于调试网络请求)
     implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
+
+    // 圆形进度条
+    implementation("com.akexorcist:round-corner-progress-bar:2.2.0")
+
+    // recyclerview 上拉刷新
+    implementation("io.github.scwang90:refresh-layout-kernel:2.0.5")
+    implementation("io.github.scwang90:refresh-header-classics:2.0.5")
+    implementation("io.github.scwang90:refresh-footer-classics:2.0.5")
 }
