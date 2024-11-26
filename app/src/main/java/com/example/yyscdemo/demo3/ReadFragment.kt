@@ -101,8 +101,8 @@ class ReadFragment : Fragment(), AudioPlayer.AudioPlayerListener {
                 audioPlayer?.pauseAudio()
             }
         }
-//        contentList[position].sentenceByXFList.first().needSpace = true
-        wordAdapter = WordAdapter(contentList[position].sentenceByXFList)
+        wordAdapter = WordAdapter()
+        wordAdapter?.submitList(contentList[position].sentenceByXFList)
         binding.rvContent.layoutManager = FlowLayoutManager()
         binding.rvContent.adapter = wordAdapter
         val mediaPlayer =
